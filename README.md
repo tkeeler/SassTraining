@@ -24,11 +24,11 @@
   I recommnd the Command Line Interface as it allows for integration with other tools
     http://sass-lang.com/install
     
-  For Windows users
-    1. http://rubyinstaller.org/
-    1. Open Cmd Prompt
-    1. >_ gem install sass
-    1. >_ sass -v
+    For Windows users
+      http://rubyinstaller.org/
+      Open Cmd Prompt
+      >_ gem install sass
+      >_ sass -v
       
 ##Sass Basics (40-45 min)
   We will be working on a set of components.
