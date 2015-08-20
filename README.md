@@ -34,29 +34,29 @@
   We will be working on a set of components.
   We will start with pure CSS and step by step convert it to Sass.
   
-  Preprocessing
-   Since Sass is a compiled language
-   Create  all.scss file and note destination for CSS
-   Demo CSS file
-   Cut contents over to all.scss file and demo it still works
-  Variables
-    Create variables from existing CSS
-    Explain use of !default
-    Demo it after Import with /core/_override.scss.
-  Partials
-    Discuss scss file naming convention.
-    Move components into component/_component.scss
-    Move core variables into core/_base.scss
-  Import
-    Note that our css file is empty
-    Import components in to all.scss
-    Note that order is still important!
-    Demo use case for !default
-  Nesting
-    TBD
-  Inheritance
-    TBD
-  Operators
-    TBD
-  Mixins
-    TBD
+###Preprocessing
+  - Since Sass is a compiled language
+  - Create  all.scss file and note destination for CSS
+  - Demo CSS file
+  - Cut contents over to all.scss file and demo it still works
+###Variables
+  - Create variables from existing CSS
+  - Explain use of !default
+  - Demo it after Import with /core/_override.scss.
+###Partials
+  - Discuss scss file naming convention.
+  - Move components into component/_component.scss
+  - Move core variables into core/_base.scss
+###Import
+  - Note that our css file is empty
+  - Import components in to all.scss
+  - Note that order is still important!
+  - Demo use case for !default
+###Nesting
+  - TBD
+###Inheritance
+  - TBD
+###Operators
+  - TBD
+###Mixins
+  - TBD
