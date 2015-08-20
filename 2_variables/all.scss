@@ -1,0 +1,468 @@
+// Global Variables
+$base-font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', Helvetica, sans-serif;
+$default-font-size: 16px;
+
+$base-width: 550px;
+$gutter-width: 10px;
+
+$base-line-height: 1.33333;
+$base-border-radius: 2px;
+
+// Common Colors
+$blue-primary:#0fb2ef;
+$green-primary:#3bd957;
+$orange-primary: #ffad2d;
+$red-primary: #f83156;
+$light: #fff;
+$grey-primary: #eee;
+$grey-dark: #ccc;
+
+// Button Structure Variables
+$btn-padding-vertical: 5px;
+$btn-padding-vertical-small: 4px;
+$btn-padding-vertical-large: 6px;
+
+$btn-padding-horizontal: 14px;
+$btn-padding-horizontal-small: 11px;
+$btn-padding-horizontal-large: 17px;
+
+$btn-font-size: 14px;
+$btn-font-size-small: 11px;
+$btn-font-size-large: 17px;
+
+// Default Button Variables
+$btn-default-color: $blue-primary;
+$btn-default-bg-color: $light;
+$btn-default-border-color: $blue-primary;
+
+$btn-default-active-color: #096b8f;
+$btn-default-active-bg-color: $grey-dark;
+$btn-default-active-border-color: #096b8f;
+
+// Primary Button Variables
+$btn-primary-color: $light;
+$btn-primary-bg-color: $blue-primary;
+$btn-primary-border-color: $blue-primary;
+
+$btn-primary-active-color: $grey-dark;
+$btn-primary-active-bg-color: #096b8f;
+$btn-primary-active-border-color: #096b8f;
+
+// Success Button Variables
+$btn-success-color: $light;
+$btn-success-bg-color: $green-primary;
+$btn-success-border-color: $green-primary;
+
+$btn-success-active-color: $grey-dark;
+$btn-success-active-bg-color: #1c9231;
+$btn-success-active-border-color: #1c9231;
+
+// Warning Button Variables
+$btn-warning-color: $light;
+$btn-warning-bg-color: $orange-primary;
+$btn-warning-border-color: $orange-primary;
+
+$btn-warning-active-color: $grey-dark;
+$btn-warning-active-bg-color: #c67900;
+$btn-warning-active-border-color: #c67900;
+
+// Danger Button Variables
+$btn-danger-color: $light;
+$btn-danger-bg-color: $red-primary;
+$btn-danger-border-color: $red-primary;
+
+$btn-danger-active-color: $grey-dark;
+$btn-danger-active-bg-color: #bd0628;
+$btn-danger-active-border-color: #bd0628;
+
+// Default Label Variables
+$label-default-color: $blue-primary;
+$label-default-bg-color: $light;
+$label-default-border-color: $blue-primary;
+
+// Primary Label Variables
+$label-primary-bg-color: $blue-primary;
+
+// Success Label Variables
+$label-success-bg-color: $green-primary;
+
+// Warning Label Variables
+$label-warning-bg-color: $orange-primary;
+
+// Danger Label Variables
+$label-danger-bg-color: $red-primary;
+
+// Success Alert Variables
+$alert-success-bg-color: #9bc8a3;
+$alert-success-color: #467f50;
+
+// Warning Alert Variables
+$alert-warning-bg-color: #ffbc54;
+$alert-warning-color: #ca7b00;
+
+// Danger Alert Variables
+$alert-danger-bg-color: #f94466;
+$alert-danger-color:#ad0625;
+
+// Callout Variables
+$callout-border-color: $grey-primary;
+
+// Default Callout Variables
+$callout-default-border-left-color: $grey-primary;
+$callout-default-color: $grey-primary;
+
+// Primary Callout Variables
+$callout-primary-border-left-color: $blue-primary;
+$callout-primary-color: $blue-primary;
+
+// Success Callout Variables
+$callout-success-border-left-color: $green-primary;
+$callout-success-color: $green-primary;
+
+// Success Callout Variables
+$callout-warning-border-left-color: $orange-primary;
+$callout-warning-color: $orange-primary;
+
+// Danger Callout Variables
+$callout-danger-border-left-color: $red-primary;
+$callout-danger-color: $red-primary;
+
+// Default Panel Variables
+$panel-default-bg-color: $light;
+$panel-default-header-color: $blue-primary;
+$panel-default-header-border-color: $blue-primary;
+
+// Primary Panel Variables
+$panel-primary-bg-color: $blue-primary;
+$panel-primary-header-color: $light;
+$panel-primary-header-border-color: $blue-primary;
+
+// Success Panel Variables
+$panel-success-bg-color: $green-primary;
+$panel-success-header-color: $light;
+$panel-success-header-border-color: $green-primary;
+
+// Warning Panel Variables
+$panel-warning-bg-color: $orange-primary;
+$panel-warning-header-color: $light;
+$panel-warning-header-border-color: $orange-primary;
+
+// Danger Panel Variables 
+$panel-danger-bg-color: $red-primary;
+$panel-danger-header-color: $light;
+$panel-danger-header-border-color: $red-primary;
+
+html {
+  font-family: $base-font-family;
+  font-size: $default-font-size;
+}
+
+body {
+  font-size: $default-font-size;
+}
+
+.buttons {
+  float: left;
+  width: $base-width;
+}
+
+.labels {
+  float: left;
+  width: $base-width;
+}
+
+.alerts {
+  float: left;
+  width: $base-width;
+}
+
+.callouts {
+  float: left;
+  width: $base-width;
+}
+
+.panels {
+  float: left;
+  width: $base-width;
+}
+
+.row {
+  clear: both;
+  padding-left: $gutter-width;
+}
+
+.btn, .btn-small, .btn-large {
+  padding: $btn-padding-vertical $btn-padding-horizontal;
+  font-size: $btn-font-size;
+  line-height: $base-line-height;
+  border-radius: $base-border-radius;
+  
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0; }
+
+.btn-small {
+  padding: $btn-padding-vertical-small $btn-padding-horizontal-small;
+  $btn-font-size-small: 11px;
+  line-height: 1.33333;
+  $base-border-radius: $base-border-radius; 
+}
+
+.btn-large {
+  padding: $btn-padding-vertical-large $btn-padding-horizontal-large;
+  font-size: $btn-font-size-large;
+  line-height: 1.33333;
+  border-radius: $base-border-radius; 
+}
+
+.btn-default {
+  color: $btn-default-color;
+  background-color: $btn-default-bg-color;
+  border-color: $btn-default-border-color; 
+}
+
+.btn-default:active {
+  color: $btn-default-active-color;
+  background-color: $btn-default-active-bg-color;
+  border-color: $btn-default-active-border-color; 
+}
+
+.btn-primary {
+  color: $btn-primary-color;
+  background-color: $btn-primary-bg-color;
+  border-color: $btn-primary-border-color; 
+}
+
+.btn-primary:active {
+  color: $btn-primary-active-color;
+  background-color: $btn-primary-active-bg-color;
+  border-color: $btn-primary-active-border-color; 
+}
+
+.btn-success {
+  color: $btn-success-color;
+  background-color: $btn-success-bg-color;
+  border-color: $btn-success-border-color; 
+}
+
+.btn-success:active {
+  color: $btn-success-active-color;
+  background-color: $btn-success-active-bg-color;
+  border-color: $btn-success-active-border-color; 
+}
+
+.btn-warning {
+  color: $btn-warning-color;
+  background-color: $btn-warning-bg-color;
+  border-color: $btn-warning-border-color; 
+}
+
+.btn-warning:active {
+  color: $btn-warning-active-color;
+  background-color: $btn-warning-active-bg-color;
+  border-color: $btn-warning-active-border-color; 
+}
+
+.btn-danger {
+  color: $btn-danger-color;
+  background-color: $btn-danger-bg-color;
+  border-color: $btn-danger-border-color; 
+}
+
+.btn-danger:active {
+  color: $grey-dark;
+  background-color: $btn-danger-active-bg-color;
+  border-color: $btn-danger-active-border-color; 
+}
+  
+.label {
+  display: inline;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: $light;
+  text-align: center;
+  white-space: no-wrap;
+  vertical-align: baseline;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.label-default {
+  color: $label-default-color;
+  border-color: $label-default-bg-color;
+  border: 1px solid;
+}
+
+.label-primary {
+  background-color: $blue-primary;
+}
+
+.label-success {
+  background-color: $green-primary;
+}
+
+.label-warning {
+  background-color: $orange-primary;
+}
+
+.label-danger {
+  background-color: $red-primary;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.alert-success {
+  background-color: $alert-success-bg-color;
+  color: $alert-success-color;
+}
+
+.alert-warning {
+  background-color: $alert-warning-bg-color;
+  color: $alert-warning-color;
+}
+
+.alert-danger {
+  background-color: $alert-danger-bg-color;
+  color: $alert-danger-color;
+}
+
+.callout {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid $callout-border-color;
+  border-left-width: 5px;
+  border-radius: $base-border-radius;
+}
+
+.callout-default {
+  border-left-color: $callout-default-border-left-color;
+}
+
+.callout-default h4 {
+  color: $callout-default-color;
+}
+
+.callout-primary {
+  border-left-color: $callout-primary-border-left-color;
+}
+
+.callout-primary h4 {
+  color: $callout-primary-color;
+}
+
+.callout-success {
+  border-left-color: $callout-success-border-left-color;
+}
+
+.callout-success h4 {
+  color: $callout-success-color;
+}
+
+.callout-warning {
+  border-left-color: $callout-warning-border-left-color;
+}
+
+.callout-warning h4 {
+  color: $callout-warning-color;
+}
+
+.callout-danger {
+  border-left-color: $callout-danger-border-left-color;
+}
+
+.callout-danger h4 {
+  color: $callout-danger-color;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: $light;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel-default {
+  border-color: $blue-primary;
+}
+
+.panel-default>.panel-heading {
+  color: $blue-primary;
+  background-color: $light;
+  border-color:  $blue-primary
+}
+
+.panel-primary {
+  border-color: $blue-primary;
+}
+
+.panel-primary>.panel-heading {
+  color: $light;
+  background-color: $blue-primary;
+  border-color: $blue-primary;
+}
+
+.panel-success {
+  border-color: $green-primary;
+}
+
+.panel-success>.panel-heading {
+  color: $light;
+  background-color: $green-primary;
+  border-color: $green-primary;
+}
+
+.panel-warning {
+  border-color: $orange-primary;
+}
+
+.panel-warning>.panel-heading {
+  color: $light;
+  background-color: $orange-primary;
+  border-color: $orange-primary;
+}
+
+.panel-danger {
+  border-color: $red-primary;
+}
+
+.panel-danger>.panel-heading {
+  color: $light;
+  background-color: $red-primary;
+  border-color: $red-primary;
+}

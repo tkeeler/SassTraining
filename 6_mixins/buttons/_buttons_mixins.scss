@@ -1,0 +1,32 @@
+// Note darken() is a built in Sass function
+// A full list of built in functions can be found here: http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+@mixin button-variant($color, $background, $border) {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: darken($color, 20);
+    background-color: darken($background, 20);
+    border-color: darken($border, 20); 
+  }
+}

@@ -1,0 +1,101 @@
+// Default Panel Variables
+$panel-default-bg-color: $light;
+$panel-default-header-color: $blue-primary;
+$panel-default-header-border-color: $blue-primary;
+
+// Primary Panel Variables
+$panel-primary-bg-color: $blue-primary;
+$panel-primary-header-color: $light;
+$panel-primary-header-border-color: $blue-primary;
+
+// Success Panel Variables
+$panel-success-bg-color: $green-primary;
+$panel-success-header-color: $light;
+$panel-success-header-border-color: $green-primary;
+
+// Warning Panel Variables
+$panel-warning-bg-color: $orange-primary;
+$panel-warning-header-color: $light;
+$panel-warning-header-border-color: $orange-primary;
+
+// Danger Panel Variables 
+$panel-danger-bg-color: $red-primary;
+$panel-danger-header-color: $light;
+$panel-danger-header-border-color: $red-primary;
+
+.panel {
+  margin-bottom: 20px;
+  background-color: $light;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel-default {
+  border-color: $blue-primary;
+}
+
+.panel-default>.panel-heading {
+  color: $blue-primary;
+  background-color: $light;
+  border-color:  $blue-primary
+}
+
+.panel-primary {
+  border-color: $blue-primary;
+}
+
+.panel-primary>.panel-heading {
+  color: $light;
+  background-color: $blue-primary;
+  border-color: $blue-primary;
+}
+
+.panel-success {
+  border-color: $green-primary;
+}
+
+.panel-success>.panel-heading {
+  color: $light;
+  background-color: $green-primary;
+  border-color: $green-primary;
+}
+
+.panel-warning {
+  border-color: $orange-primary;
+}
+
+.panel-warning>.panel-heading {
+  color: $light;
+  background-color: $orange-primary;
+  border-color: $orange-primary;
+}
+
+.panel-danger {
+  border-color: $red-primary;
+}
+
+.panel-danger>.panel-heading {
+  color: $light;
+  background-color: $red-primary;
+  border-color: $red-primary;
+}

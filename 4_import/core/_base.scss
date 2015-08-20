@@ -1,0 +1,57 @@
+// Global Variables
+$base-font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', Helvetica, sans-serif;
+$default-font-size: 16px;
+
+$base-width: 550px;
+$gutter-width: 10px;
+
+$base-line-height: 1.33333;
+$base-border-radius: 2px;
+
+// Common Colors
+$blue-primary:#0fb2ef;
+$green-primary:#3bd957;
+$orange-primary: #ffad2d;
+$red-primary: #f83156;
+$light: #fff;
+$grey-primary: #eee;
+$grey-dark: #ccc;
+
+html {
+  font-family: $base-font-family;
+  font-size: $default-font-size;
+}
+
+body {
+  font-size: $default-font-size;
+}
+
+.buttons {
+  float: left;
+  width: $base-width;
+}
+
+.labels {
+  float: left;
+  width: $base-width;
+}
+
+.alerts {
+  float: left;
+  width: $base-width;
+}
+
+.callouts {
+  float: left;
+  width: $base-width;
+}
+
+.panels {
+  float: left;
+  width: $base-width;
+}
+
+.row {
+  clear: both;
+  padding-left: $gutter-width;
+}

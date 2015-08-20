@@ -1,0 +1,33 @@
+// Success Alert Variables
+$alert-success-bg-color: #9bc8a3;
+$alert-success-color: #467f50;
+
+// Warning Alert Variables
+$alert-warning-bg-color: #ffbc54;
+$alert-warning-color: #ca7b00;
+
+// Danger Alert Variables
+$alert-danger-bg-color: #f94466;
+$alert-danger-color:#ad0625;
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.alert-success {
+  background-color: $alert-success-bg-color;
+  color: $alert-success-color;
+}
+
+.alert-warning {
+  background-color: $alert-warning-bg-color;
+  color: $alert-warning-color;
+}
+
+.alert-danger {
+  background-color: $alert-danger-bg-color;
+  color: $alert-danger-color;
+}

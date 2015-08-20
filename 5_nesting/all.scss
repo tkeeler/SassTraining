@@ -1,0 +1,186 @@
+$font-size-base: 16px !default;
+$font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', Helvetica, sans-serif;
+$line-height: 1.3333333 !default;
+
+
+$padding-base-vertical: 5px !default;
+$padding-base-horizontal: 14px !default;
+$padding: $padding-base-vertical $padding-base-horizontal;
+
+$button-font-size: 14px !default;
+$button-border-radius: 2px !default;
+
+// Colors
+$blue: #0fb2ef !default;
+$blue-active: #0c89b6 !default;
+
+$green: #3bd957 !default;
+$green-active: #24bc40 !default;
+
+$orange: #ffad2d !default;
+$orange-active: #fa9a00 !default;
+
+$red: #f83156 !default;
+$red-active: #ec0932 !default;
+
+$light: #fff !default;
+
+
+html {
+  font-family: $font-family;
+  font-size: $font-size-base;
+}
+
+body {
+  font-size: $font-size-base;
+}
+
+.btn-default {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $blue;
+  background-color: $light;
+  border-color: $blue;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: $blue-active;
+    background-color: $light;
+    border-color: $blue-active; 
+  }
+}
+
+.btn-primary {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $light;
+  background-color: $blue;
+  border-color: $blue;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: $light;
+    background-color: $blue-active;
+    border-color: $blue-active; 
+  }
+}
+
+.btn-success {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $light;
+  background-color: $green;
+  border-color: $green;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: $light;
+    background-color: $green-active;
+    border-color: $green-active; 
+  }
+}
+
+.btn-warning {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $light;
+  background-color: $orange;
+  border-color: $orange;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: $light;
+    background-color: $orange-active;
+    border-color: $orange-active;
+  }
+}
+
+.btn-danger {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  color: $light;
+  background-color: $red;
+  border-color: $red;
+
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+  
+  &:active {
+    color: $light;
+    background-color: $red-active;
+    border-color: $red-active; 
+  }
+}

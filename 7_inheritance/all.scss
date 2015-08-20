@@ -1,0 +1,38 @@
+$font-size-base: 16px !default;
+$font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', Helvetica, sans-serif;
+$line-height: 1.3333333 !default;
+
+
+$padding-base-vertical: 5px !default;
+$padding-base-horizontal: 14px !default;
+$padding: $padding-base-vertical $padding-base-horizontal;
+
+$button-font-size: 14px !default;
+$button-border-radius: 2px !default;
+
+// Colors
+$blue: #0fb2ef !default;
+$blue-active: #0c89b6 !default;
+
+$green: #3bd957 !default;
+$green-active: #24bc40 !default;
+
+$orange: #ffad2d !default;
+$orange-active: #fa9a00 !default;
+
+$red: #f83156 !default;
+$red-active: #ec0932 !default;
+
+$light: #fff !default;
+
+
+html {
+  font-family: $font-family;
+  font-size: $font-size-base;
+}
+
+body {
+  font-size: $font-size-base;
+}
+
+@import 'buttons';

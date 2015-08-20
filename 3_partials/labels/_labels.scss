@@ -1,0 +1,52 @@
+// Default Label Variables
+$label-default-color: $blue-primary;
+$label-default-bg-color: $light;
+$label-default-border-color: $blue-primary;
+
+// Primary Label Variables
+$label-primary-bg-color: $blue-primary;
+
+// Success Label Variables
+$label-success-bg-color: $green-primary;
+
+// Warning Label Variables
+$label-warning-bg-color: $orange-primary;
+
+// Danger Label Variables
+$label-danger-bg-color: $red-primary;
+
+.label {
+  display: inline;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: $light;
+  text-align: center;
+  white-space: no-wrap;
+  vertical-align: baseline;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.label-default {
+  color: $blue-primary;
+  border-color: $blue-primary;
+  border: 1px solid;
+}
+
+.label-primary {
+  background-color: $blue-primary;
+}
+
+.label-success {
+  background-color: $green-primary;
+}
+
+.label-warning {
+  background-color: $orange-primary;
+}
+
+.label-danger {
+  background-color: $red-primary;
+}

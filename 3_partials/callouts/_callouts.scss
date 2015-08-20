@@ -1,0 +1,70 @@
+// Callout Variables
+$callout-border-color: $grey-primary;
+
+// Default Callout Variables
+$callout-default-border-left-color: $grey-primary;
+$callout-default-color: $grey-primary;
+
+// Primary Callout Variables
+$callout-primary-border-left-color: $blue-primary;
+$callout-primary-color: $blue-primary;
+
+// Success Callout Variables
+$callout-success-border-left-color: $green-primary;
+$callout-success-color: $green-primary;
+
+// Success Callout Variables
+$callout-warning-border-left-color: $orange-primary;
+$callout-warning-color: $orange-primary;
+
+// Danger Callout Variables
+$callout-danger-border-left-color: $red-primary;
+$callout-danger-color: $red-primary;
+
+.callout {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid $callout-border-color;
+  border-left-width: 5px;
+  border-radius: $base-border-radius;
+}
+
+.callout-default {
+  border-left-color: $callout-default-border-left-color;
+}
+
+.callout-default h4 {
+  color: $callout-default-color;
+}
+
+.callout-primary {
+  border-left-color: $callout-primary-border-left-color;
+}
+
+.callout-primary h4 {
+  color: $callout-primary-color;
+}
+
+.callout-success {
+  border-left-color: $callout-success-border-left-color;
+}
+
+.callout-success h4 {
+  color: $callout-success-color;
+}
+
+.callout-warning {
+  border-left-color: $callout-warning-border-left-color;
+}
+
+.callout-warning h4 {
+  color: $callout-warning-color;
+}
+
+.callout-danger {
+  border-left-color: $callout-danger-border-left-color;
+}
+
+.callout-danger h4 {
+  color: $callout-danger-color;
+}

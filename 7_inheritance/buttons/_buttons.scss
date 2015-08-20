@@ -1,0 +1,46 @@
+@import 'buttons_mixins';
+
+.btn {
+  padding: $padding;
+  font-size: $button-font-size;
+  line-height: $line-height;
+  border-radius: $button-border-radius;
+  
+  background-image: none;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: 0;
+}
+
+.btn-default {
+  @extend .btn;
+  @include button-variant($blue, $light, $blue);
+}
+
+.btn-primary {
+  @extend .btn;
+  @include button-variant($light, $blue, $blue);
+}
+
+.btn-success {
+  @extend .btn;
+  @include button-variant($light, $green, $green);
+}
+
+.btn-warning {
+  @extend .btn;
+  @include button-variant($light, $orange, $orange);
+}
+
+.btn-danger {
+  @extend .btn;
+  @include button-variant($light, $red, $red);
+}

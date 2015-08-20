@@ -1,0 +1,21 @@
+@import 'buttons_mixins';
+
+.btn-default {
+  @include button-variant($blue, $light, $blue);
+}
+
+.btn-primary {
+  @include button-variant($light, $blue, $blue);
+}
+
+.btn-success {
+  @include button-variant($light, $green, $green);
+}
+
+.btn-warning {
+  @include button-variant($light, $orange, $orange);
+}
+
+.btn-danger {
+  @include button-variant($light, $red, $red);
+}
